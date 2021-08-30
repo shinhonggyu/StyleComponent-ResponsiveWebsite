@@ -1,0 +1,11 @@
+html {
+  scroll-snap-type: y mandatory;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+.app > * {
+  scroll-snap-align: start;
+}
