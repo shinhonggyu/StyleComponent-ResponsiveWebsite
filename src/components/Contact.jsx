@@ -14,16 +14,26 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
 `;
 
 const FormContainer = styled.div`
   width: 50%;
+  @media (max-width: 480px) {
+    width: 100%;
+  }
 `;
 
 const Title = styled.h1`
   margin: 50px;
   margin-top: 0;
   margin-left: 119px;
+  @media (max-width: 480px) {
+    margin: 20px;
+    margin-left: 35px;
+  }
 `;
 
 const Form = styled.form`
@@ -31,6 +41,9 @@ const Form = styled.form`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
 `;
 
 const LeftForm = styled.div`
@@ -39,6 +52,10 @@ const LeftForm = styled.div`
   flex-direction: column;
   justify-content: space-between;
   margin-right: 20px;
+  @media (max-width: 480px) {
+    height: 50%;
+    margin-right: 0;
+  }
 `;
 
 const RightForm = styled.div`
@@ -46,18 +63,30 @@ const RightForm = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* width: 50%; */
+  @media (max-width: 480px) {
+    width: 70%;
+    margin-left: 10px;
+  }
 `;
 
 const Input = styled.input`
   width: 200px;
   padding: 20px;
+  @media (max-width: 480px) {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
 `;
 
 const TextArea = styled.textarea`
   width: 200px;
   height: 60%;
   padding: 20px;
+  @media (max-width: 480px) {
+    width: 90%;
+    padding: 5px;
+    margin-top: 20px;
+  }
 `;
 
 const Button = styled.button`
@@ -69,6 +98,11 @@ const Button = styled.button`
   border-radius: 10px;
   margin-top: 20px;
   cursor: pointer;
+  @media (max-width: 480px) {
+    padding: 5px;
+    font-size: 14px;
+    width: 95%;
+  }
 `;
 
 const AddressContainer = styled.div`
@@ -76,21 +110,34 @@ const AddressContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width: 480px) {
+    width: 100%;
+    margin-top: 20px;
+  }
 `;
 
 const AddressItem = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 50px;
+  @media (max-width: 480px) {
+    margin-bottom: 20px;
+  }
 `;
 
 const Icon = styled.img`
   width: 20px;
   margin-right: 20px;
+  @media (max-width: 480px) {
+    width: 15px;
+  }
 `;
 const Text = styled.span`
   font-size: 20px;
   margin-right: 15px;
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
 `;
 
 const Contact = () => {

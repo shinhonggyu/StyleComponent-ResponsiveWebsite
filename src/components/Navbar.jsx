@@ -26,6 +26,10 @@ const Logo = styled.h1`
 const Menu = styled.ul`
   display: flex;
   list-style: none;
+
+  @media (max-width: 480px) {
+    display: none;
+  }
 `;
 const MonuItem = styled.li`
   margin-right: 30px;
